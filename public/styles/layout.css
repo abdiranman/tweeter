@@ -23,3 +23,17 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ nav {
+  font-family: 'Bungee', cursive;
+  font-family: 'Source Sans 3', sans-serif;
+ }
+
+ /* CSS for the <main> element */
+main {
+  width: 90%;                      /* 90% of the width of its parent element */
+  margin: 0 auto;                  /* Center align to the body */
+  background-color: inherit;       /* Same background color as the <body> element */
+  padding: 20px;                   /* Add padding for spacing inside <main> */
+}
+

@@ -1,0 +1,22 @@
+nav {
+    height: 120px;                  /* Set the height to 120 pixels */
+    width: 100%;                   /* Full width of the viewport */
+    background-color: #4056A1;     /* Background color */
+    color: #FFFFFF;                /* Font color */
+    display: flex;                 /* Use flexbox for alignment */
+    justify-content: space-between; /* Space on the right and left */
+    align-items: center;           /* Vertically center content */
+    padding: 0 1.5em;  
+    position: fixed;
+            /* 1.5ems of space on the right and left */
+  }
+
+nav span {
+    font-family: 'Bungee', sans-serif; /* Use Bungee as font-family */
+  }
+
+  
+  
+  
+  
+  

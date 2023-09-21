@@ -12,7 +12,6 @@
     rel="stylesheet">
 
   <!-- Timago import -->
-  <!--timeago-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
     integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -40,75 +39,46 @@
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
-  <script src="/scripts/composer-char-counter.js"></script>
 
 </head>
 
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span>tweeter</span>
-    <span>Write a tweet <i class="fa-solid fa-angles-down"></i> </span>
+    <div class="logoContainer">
+      <span>tweeter</span>
+    </div>
+    <div class="buttonContainer">
+      <button>Write a new Tweet!</button>
+      <i class="fa-solid fa-angles-down"></i>
+    </div>
   </nav>
-
-  <header class="profile">
+  <header>
     <div>
       <img src="/images/profile-hex.png">
     </div>
     <br>
     <div>
-      <h2>Your Name</h2>
+      <h2 class="name">Dino Pranjic</h2>
     </div>
   </header>
-
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <div class="error"></div>
       <h2>Compose Tweet</h2>
-      <form action="/tweets" method="POST">
+      <form method="POST" action="/tweets" id="submitTweet">
         <label for="tweet-text">What are you humming about?</label>
-        <textarea name="text" id="tweet-text"></textarea>
-        <div>
+        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <div class="formButtonContainer">
           <button type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
-
-    <article class="tweet">
-      <header>
-        <span>Newton</span>
-        <span>@SirIsaac</span>
-      </header>
-      <p>If I have seen further it is by standing on the shoulders of giants</p>
-      <footer>
-        <div>10 days ago</div>
-        <div>
-          <i class="fa-solid fa-flag"></i>
-          <i class="fa-solid fa-retweet"></i>
-          <i class="fa-solid fa-heart"></i>
-        </div>
-      </footer>
-    </article>
-    <article class="tweet">
-      <header>
-        <span>Newton</span>
-        <span>@SirIsaac</span>
-      </header>
-      <p>If I have seen further it is by standing on the shoulders of giants</p>
-      <footer>
-        <div>10 days ago</div>
-        <div>
-          <i class="fa-solid fa-flag"></i>
-          <i class="fa-solid fa-retweet"></i>
-          <i class="fa-solid fa-heart"></i>
-        </div>
-      </footer>
-    </article>
-
-
+    <section id="tweets-container">
+    </section>
   </main>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 </body>
 
 </html>

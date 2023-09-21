@@ -55,3 +55,15 @@ main {
   padding: 20px;                   /* Add padding for spacing inside <main> */
 }
 
+@media only screen and (max-width: 767px) {
+  nav {
+    background-color: #000000;
+    background-image: url("/images/back-pattern.png");
+  }
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}

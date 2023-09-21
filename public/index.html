@@ -51,7 +51,7 @@
     <span>Write a tweet <i class="fa-solid fa-angles-down"></i> </span>
   </nav>
 
-  <header>
+  <header class="profile">
     <div>
       <img src="/images/profile-hex.png">
     </div>
@@ -64,6 +64,7 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
+      <div class="error"></div>
       <h2>Compose Tweet</h2>
       <form action="/tweets" method="POST">
         <label for="tweet-text">What are you humming about?</label>

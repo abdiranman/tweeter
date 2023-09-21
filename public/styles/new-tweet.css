@@ -1,11 +1,12 @@
 .new-tweet {
     margin: 0 auto;
+    margin-top: 100px;
   
   }
   
   textarea {
     width: 100%;
-    height: 40px;
+    height: 100px;
     background-color: transparent;
     border: 0;
     border-bottom: 3px solid darkgrey;
@@ -28,6 +29,10 @@
     color: black;
   }
   
+  .negativeCounter {
+    color: red;
+  }
+  
   .new-tweet h2 {
     margin-top: 50px;
   }
@@ -41,45 +46,15 @@
   label {
     display: none;
   }
-
-  /* CSS for the .counter-red class */
-.counter-red {
-    color: red;
-  }
-
   
-  .tweet {
-    margin: 0 auto;
-    border: 3px solid black;
-    margin-top: 15px;
-    padding: 5px;
+  .error {
+    display: none;
+    border: 3px solid red;
+    transform: translateY(-100%);
   }
   
-  .tweet:hover {
-    box-shadow: 10px 10px 10px;
-  }
-  
-  article.tweet header {
-    background-color: transparent;
+  .error div{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 40px;
-    margin-top: 5px;
-  }
-  
-  article.tweet p {
-    height: 40px;
-    margin-top: 20px;
-    border-bottom: 3px solid darkgray;
-  }
-  
-  article.tweet footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-  }
-  
-  article.tweet i:hover {
-    color: #4056A1;
+    justify-content: center;
   }

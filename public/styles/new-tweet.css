@@ -1,7 +1,7 @@
 .new-tweet {
   margin: 0 auto;
   margin-top: 100px;
-
+  
 }
 
 textarea {
@@ -43,3 +43,4 @@ label {
   display: none;
   border: 3px solid red
 }
+

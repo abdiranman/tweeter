@@ -41,3 +41,9 @@
   label {
     display: none;
   }
+
+  /* CSS for the .counter-red class */
+.counter-red {
+    color: red;
+  }
+  

@@ -20,14 +20,32 @@ body {
   font-size: 24px;
 }
 
+@media only screen and (min-width: 768px) {
+
+  body {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .profile {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 15vw;
+    max-width: 35%;
+  }
+
+  .container {
+    margin: 1vw;
+    margin-top: 5vw;
+  }
+
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- nav {
-  font-family: 'Bungee', cursive;
-  font-family: 'Source Sans 3', sans-serif;
- }
 
  /* CSS for the <main> element */
 main {

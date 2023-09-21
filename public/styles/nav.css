@@ -1,22 +1,41 @@
 nav {
-    height: 120px;                  /* Set the height to 120 pixels */
-    width: 100%;                   /* Full width of the viewport */
-    background-color: #4056A1;     /* Background color */
-    color: #FFFFFF;                /* Font color */
-    display: flex;                 /* Use flexbox for alignment */
-    justify-content: space-between; /* Space on the right and left */
-    align-items: center;           /* Vertically center content */
-    padding: 0 1.5em;  
-    position: fixed;
-            /* 1.5ems of space on the right and left */
-  }
-
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  
+}
+nav button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+.buttonContainer, .logoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 nav span {
-    font-family: 'Bungee', sans-serif; /* Use Bungee as font-family */
-  }
+  font-family:'Bungee', cursive;
+  transform: translateY(50%);
+  font-size: 36px;
+}
+.fa-solid.fa-angles-down {
+  text-align: center;
+  color: red;
+}
 
-  
-  
-  
-  
-  
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: #000000;
+    background-image: url("/images/back-pattern.png");
+  }
+}

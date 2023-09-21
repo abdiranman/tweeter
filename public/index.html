@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+   <!-- Meta Information -->
+   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   <!-- Icon from fontawsome and google fonts imports -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -41,7 +43,6 @@
   <script type="text/javascript" src="/scripts/client.js"></script>
 
 </head>
-
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
@@ -53,19 +54,21 @@
       <i class="fa-solid fa-angles-down"></i>
     </div>
   </nav>
-  <header>
+
+  <header class="profile">
     <div>
-      <img src="/images/profile-hex.png">
+        <img src="/images/profile-hex.png"> 
     </div>
     <br>
     <div>
-      <h2 class="name">Dino Pranjic</h2>
+        <h2 class="name">Abdiranman</h2>
     </div>
-  </header>
+</header>
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
+      <div class="error">
+      </div>
       <form method="POST" action="/tweets" id="submitTweet">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>

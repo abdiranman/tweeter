@@ -58,22 +58,25 @@ const renderTweets = (data) => {
     $tweetComponent.prepend($tweet);
   }
 }
-$(document).ready(function() {
-  const loadTweets = () => {
-    $.ajax({
-      url: '/tweets',
-      method: 'GET',
-      dataType: 'json',
-      success: (tweets) => {
-        renderTweets(tweets);
 
-      },
-      error: (err) => {
-        console.log("error:", err);
-      }
-    });
-  };
-  loadTweets();
+const loadTweets = () => {
+  $.ajax({
+    url: '/tweets',
+    method: 'GET',
+    dataType: 'json',
+    success: (tweets) => {
+      renderTweets(tweets);
+
+    },
+    error: (err) => {
+      console.log("error:", err);
+    }
+  });
+};
+loadTweets();
+
+$(document).ready(function() {
+  
 
   $("#submitTweet").submit(function(e){
     // prevents page from refreshing
@@ -100,6 +103,8 @@ $(document).ready(function() {
       //loads tweets without refreshing
       loadTweets();
     })
+    .fail(function(err) {
+      console.log( "error", err.responseJSON.error );
+    })
   });
-  renderTweets(tweetData);
 });

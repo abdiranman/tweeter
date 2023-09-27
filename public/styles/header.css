@@ -1,32 +1,49 @@
 header {
-    height: 700px;
+    height: 30vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #0085cc; */
     background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-    font-weight: bold;
     text-align: center;
-  }
-
-/* CSS for the avatar image */
-header img {
-    width: 100px;
-    /* Set the width of the avatar image */
-    height: 100px;
-    /* Set the height of the avatar image */
-    border-radius: 50%;
-    /* Create a circular shape for the avatar */
-    object-fit: cover;
-    /* Maintain aspect ratio and cover the container */
 }
 
-/* CSS for the name below the avatar */
-header h2 {
-    margin-top: 10px;
-    /* Add space between avatar and name */
+header img {
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .name-container h2 {
+    margin-top: 5px;
     font-size: 1.5em;
-    /* Set font size for the name */
+    
+    
+}
+
+header .name-container .handle {
+    font-size: 1em;
+    
+    
+}
+
+/* Add this CSS to align the name and handle horizontally */
+header .name-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Add margin between the name and handle */
+header .name-container .handle {
+    margin-left: 5px; /* Adjust the margin as needed */
 }

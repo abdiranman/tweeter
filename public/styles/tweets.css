@@ -19,10 +19,10 @@ article.tweet header {
 }
 
 article.tweet p {
-  height: 40px;
   margin-top: 25px;
   font-size: 100%;
   border-bottom: 3px solid darkgray;
+  word-break: break-all;
 }
 
 article.tweet footer {
